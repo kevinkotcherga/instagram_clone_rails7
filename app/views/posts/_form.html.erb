@@ -11,22 +11,19 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :title, style: "display: block" %>
-    <%= form.text_field :title %>
-  </div>
+  <h1>Créer une nouvelle publication</h1>
 
   <div>
-    <%= form.label :body, style: "display: block" %>
-    <%= form.text_area :body %>
-  </div>
-
-  <div>
-    <%= form.label :image %>
+    Choissisez vos photos ici
     <%= form.file_field :image %>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= form.text_area :body, value: "Ecrivez une légende..." %>
   </div>
+
+  <div>
+    <%= form.submit "Partager" %>
+  </div>
+
 <% end %>
