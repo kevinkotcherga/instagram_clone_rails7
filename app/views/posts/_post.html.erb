@@ -1,11 +1,24 @@
 <div id="<%= dom_id post %>">
-  <h4><%= link_to post.user.name, user_path(post.user) %></h4>
-  <h6><%= pluralize(post.views, "view") %></h6>
+  <div class="container-post">
 
-  <div>
-    <%= post.body %>
-    <%= image_tag post.image_url if post.image %>
+  <div class="post-header">
+    <%= image_tag("avatar.png") %>
+    <h1><%= link_to post.user.name, user_path(post.user) %></h1>
   </div>
 
+    <div>
+      <div class="container-img">
+        <%= image_tag post.image_url if post.image %>
+      </div>
 
+      <div class="text-post">
+        <div class="description">
+          <%= link_to post.user.name, user_path(post.user), class:"name" %>
+          <%= post.body  %>
+        </div>
+        <%= link_to "Voir les commentaires", post, class:"comment" %>
+      </div>
+    </div>
+
+  </div>
 </div>
