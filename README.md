@@ -24,3 +24,4 @@ Things you may want to cover:
 * ...
  
 # template-rails7-devise
+# instagram_clone_rails7
