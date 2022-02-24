@@ -4,5 +4,6 @@
   <h6><%= pluralize(post.views, "view") %></h6>
   <div>
     <%= post.body %>
+    <%= image_tag post.image_url if post.image %>
   </div>
 </div>
