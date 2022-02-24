@@ -1,3 +1,7 @@
 .navbar-brand img {
   width: 100px;
 }
+
+.navbar-container {
+  border-bottom: solid 1px #E3E3E3;
+}
