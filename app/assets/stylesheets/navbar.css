@@ -1,7 +1,19 @@
+.container-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar-brand img {
   width: 100px;
+  margin-right: 40px;
 }
 
 .navbar-container {
   border-bottom: solid 1px #E3E3E3;
+}
+
+.navbar-avatar img {
+  width: 25px;
+  border-radius: 50%;
 }
