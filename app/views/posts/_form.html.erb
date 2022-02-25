@@ -11,19 +11,34 @@
     </div>
   <% end %>
 
+<div class="container-form">
+
+  <div class="form-header">
+    <%= link_to root_path do %>
+        <%= image_tag "close.svg", class:"close" %>
+      <% end %>
+  </div>
+  <div class="container-title">
   <h1>Créer une nouvelle publication</h1>
-
-  <div>
-    Choissisez vos photos ici
-    <%= form.file_field :image %>
   </div>
 
-  <div>
-    <%= form.text_area :body, value: "Ecrivez une légende..." %>
+  <div class="container-content">
+      <div class="container-picture">
+        <p>Choissisez votre photo ici :</P>
+        <div class="container-upload">
+          <%= form.file_field :image, class:"input-file" %>
+        </div>
+      </div>
+
+    <div class="container-body">
+      <%= form.text_area :body, value: "Ecrivez une légende" %>
+    </div>
+
+    <div class="submit-form">
+      <%= form.submit "Partager", class:"submit" %>
+    </div>
   </div>
 
-  <div>
-    <%= form.submit "Partager" %>
-  </div>
+<div>
 
 <% end %>
