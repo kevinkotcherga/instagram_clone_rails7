@@ -1,0 +1,31 @@
+.container-profile {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: solid 1px #E3E3E3;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 10px 40px 40px 40px;
+}
+
+.title-profile {
+  font-size: 1rem;
+}
+
+.btn-blue {
+  color: #fff;
+  background-color: #0095F6;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.container-profile p {
+  margin: 10px 0 0 0 ;
+}
+
+.delete {
+  margin-top: 15px;
+}

@@ -18,20 +18,21 @@
         <%= image_tag "close.svg", class:"close" %>
       <% end %>
   </div>
+
   <div class="container-title">
-  <h1>Créer une nouvelle publication</h1>
+    <h1>Créer une nouvelle publication</h1>
   </div>
 
   <div class="container-content">
       <div class="container-picture">
         <p>Choissisez votre photo ici :</P>
         <div class="container-upload">
-          <%= form.file_field :image, class:"input-file" %>
+          <%= form.file_field :image, class:"input-file form-control" %>
         </div>
       </div>
 
     <div class="container-body">
-      <%= form.text_area :body, value: "Ecrivez une légende" %>
+      <%= form.text_area :body, value: "Ecrivez une légende", class:"form-control" %>
     </div>
 
     <div class="submit-form">
